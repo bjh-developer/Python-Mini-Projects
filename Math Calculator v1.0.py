@@ -50,6 +50,8 @@ while True:
       print()
       print("Enter 'quadratic equation' or '16' to find the solutions")
       print()
+      print("Enter 'square root' or '17' to find the square root of a number")
+      print()
       print("Enter 'quit' to end the program")
       user_input = input(": ")
 
@@ -209,6 +211,15 @@ while True:
          print()
          print(str(user_input_a) + "x^2" + " + " + str(user_input_b) + "x" + " + " + str(user_input_c) + " = " + str(sol1) + " or " + str(sol2))
          print('The solution are {0} or {1}'.format(sol1,sol2))
+         print()
+
+      elif user_input == "square root" or user_input == "Square root" or user_input == "17":
+         #import cmath if using complex
+
+         sqr_num = input("Number: ")
+         num_sqred = int(sqr_num) ** 0.5 #if cmath, use cmath.sqrt(sqr_num)
+         print()
+         print("The square root of " + sqr_num + " is " + str(num_sqred))
          print()
 
       else:
