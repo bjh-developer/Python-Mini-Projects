@@ -1,3 +1,7 @@
+#Memory Flash Game by bjh-developer, built in Visual Studio Code, with Python 3
+
+### Optimised for all IDE except for Jupyter Notebook! ###
+
 #Let's make a game!
 #The game plays like this: Each level, a series of numbers (0 to 9) will be flashed, and each number is flashed 
 #at a regular interval (like blinking - show 1 number, clear it, show 2nd number, etc). 
