@@ -20,7 +20,7 @@ time.sleep(6)
 #instructions
 print()
 print()
-print("Instructions for this game: \n1. The player (you & computer) that has the most point after 10 rounds win! \n2. The rules of scissors, paper, stone apllys to this game (duh)")
+print("Instructions for this game: \n1. The player (you & computer) that has the most point after 10 rounds win! \n2. The rules of scissors, paper, stone applies to this game (duh)")
 time.sleep(6)
 
 
