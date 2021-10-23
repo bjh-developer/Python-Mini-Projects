@@ -113,21 +113,21 @@ if user_ready == "Yes" or user_ready == "yes" or user_ready == "Y" or user_ready
         time.sleep(5)
         print()
         print("Final scores:")
-        print(user_name + ": " + user-score)
+        print(user_name + ": " + user_score)
         print("Computer: " + computer_score)
     elif user_score < computer_score:
         print("Unfortunately, you lost to computer :(")
         time.sleep(5)
         print()
         print("Final scores:")
-        print(user_name + ": " + user-score)
+        print(user_name + ": " + user_score)
         print("Computer: " + computer_score)
     else:
         print("Seems like is a tie...")
         time.sleep(5)
         print()
         print("Final scores:")
-        print(user_name + ": " + user-score)
+        print(user_name + ": " + user_score)
         print("Computer: " + computer_score)
 
 
