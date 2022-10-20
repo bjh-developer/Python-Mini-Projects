@@ -26,8 +26,11 @@ def CalcPi():
     pie = (4 * (CircleArea/SquareArea))
 
 #call out functions
+start = time.time()
 plotPoints()
 CalcPi()
+#calculate time taken to execute
+end = time.time()
 
 #print out final statements
-print(f'Number of points plotted within circle of radius of 1 = {CircleArea} \nNumber of total points plotted in the square containing circle radius of 1 = {SquareArea} \nPi equals to (estimated) = 4 * {CircleArea} / {SquareArea} = {pie}')
+print(f'Number of points plotted within circle of radius of 1 = {CircleArea} \nNumber of total points plotted in the square containing circle radius of 1 = {SquareArea} \nPi equals to (estimated) = 4 * {CircleArea} / {SquareArea} = {pie} \nTime taken for execution: {end-start} seconds')
