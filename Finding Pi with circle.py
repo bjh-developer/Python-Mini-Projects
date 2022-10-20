@@ -1,7 +1,7 @@
 #'Finding Pi with circle' by Joon Hao, built in Visual Studio Code, with Python 3
 
 #import
-import random, math
+import random, math, time
 
 times = input("How many times you want to plot points for circle? ")
 SquareArea = 0
