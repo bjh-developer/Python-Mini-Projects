@@ -1,4 +1,4 @@
-#imports the module 'random'
+#imports the module 'random' & 'time'
 import random, time
 
 #declaring variables
@@ -10,14 +10,17 @@ archive_times = 0
 #ask user what is the number range for random number generator
 lowerLimit = int(input('What is the lowest number you want in your random: '))
 upperLimit = int(input('What is the highest number you want in your random: '))
-user_replacement = int(input('How many times before number can be reused: '))
+user_replacement = int(input('How many times before number can be reused (if don\'t want any repeating, type in 0): '))
 total = upperLimit - (lowerLimit - 1)
 
 print('\n--------------------------------------------------------\n')
 
 #defines function to generate random number
 def generate_num():
+
+    #starts the timer to time the duration taken to generate numbers
     start = time.process_time()
+    
     while True:
         global sessions, archive_times
 
@@ -34,10 +37,13 @@ def generate_num():
                 numListPrinted.append(number)
                 archive.append(number)
                 archive_times += 1
-                if archive_times > user_replacement:
-                    archive.pop(0)
-                else:
+                if user_replacement == 0:
                     pass
+                else:
+                    if archive_times > user_replacement:
+                        archive.pop(0)
+                    else:
+                        pass
             else:
                 #extra layer of checking to check if all numbers has been exhausted
                 if len(archive) == total:
@@ -51,7 +57,7 @@ def generate_num():
         sessions += 1
         print(f'\nYour randomly generated numbers are: {numListPrinted}')
         print(f'Generation number = {sessions}')
-        print(f'Time taken for generation = {time.process_time() - start}')
+        print(f'Time taken for generation = {time.process_time() - start} seconds')
 
         #if else statement to check if user wants to generate again
         cont = input('Do you wish to generate another series of numbers [y/n]: ')
